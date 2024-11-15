@@ -1,6 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Forum&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+}
+
+#MenuTitle{
+  font-family: 'Ephesis', cursive;
+  font-size: 4rem;
+  margin: 0px;
+}
+
+#ItemName {
+  font-family: 'Forum', sans-serif;
+  font-size: 2vw;
+  font-style: bold;
+}
+
+#menuItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  /* border: 1px solid #ddd; */
+  gap: 20px;
+}
+
+#description {
+  font-style: italic;
+  font-size: 1.2vw;
+  font-family: 'Forum', sans-serif;
+}
+
+#Price {
+  font-size: 1.5vw;
+  /* font-family: 'Forum', sans-serif; */
+  font-weight: normal;
+}
+
+button :hover {
+  cursor: pointer;
+}
+
+#clear_button {
+  color: tomato;
+}
+
+button {
+  background-color: transparent;
+}
+
+#ListsContainer {
+  border-top: 2px solid #333;
+  display: flex;
+  flex-direction: row;
+  border: '1px solid #ddd';
+  gap: 5px;
+}
+
+#AddToOrder {
+  height: 4vw;
+  width: 8vw;
+  font-size: 1vw;
+  border-radius: 7px;
+  padding: 0.5vw;
+}
+
+#AddToOrder:hover {
+  cursor: pointer;
+  background-color: dimgrey;
+  color: white;
+}
+
+#Add {
+  border-radius: 7px 0px 0px 7px;
+}
+
+#Subtract {
+  border-radius: 0px 7px 7px 0px;
+}
+
+#Add, #Subtract {
+  border-width: 1px;
+  background-color: transparent;
+  color: black;
+  font-weight: 800;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#Add:hover , #Subtract:hover {
+  cursor: pointer;
+  background-color: sandybrown;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-family: 'forum', sans-serif;
+  font-size: large;
+}
+
+#OrderContainer {
+  border-top: 2px solid #333;
+  margin-top: 20px;
+  padding: 10px;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
 }
